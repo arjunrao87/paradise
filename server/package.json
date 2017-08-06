@@ -1,0 +1,27 @@
+{
+  "name": "paradise-server",
+  "version": "2.0.0",
+  "description": "Paradise Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjunrao87/paradise.git"
+  },
+  "author": "arjunrao87",
+  "license": "ISC",
+  "homepage": "https://github.com/arjunrao87/paradise#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "gmail-send": "^1.2.11",
+    "nodemailer": "^4.0.1",
+    "pm2": "^2.5.0",
+    "request": "^2.81.0",
+    "winston": "^2.3.1"
+  }
+}
