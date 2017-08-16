@@ -5,20 +5,20 @@ import { TabNavigator, TabBarBottom } from 'react-navigation';
 
 import Colors from '../constants/Colors';
 
-import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import Search from '../screens/Search';
+import Lists from '../screens/Lists';
+import Settings from '../screens/Settings';
 
 export default TabNavigator(
   {
-    Home: {
-      screen: HomeScreen,
+    Search: {
+      screen: Search,
     },
-    Links: {
-      screen: LinksScreen,
+    Lists: {
+      screen: Lists,
     },
     Settings: {
-      screen: SettingsScreen,
+      screen: Settings,
     },
   },
   {
@@ -27,15 +27,15 @@ export default TabNavigator(
         const { routeName } = navigation.state;
         let iconName;
         switch (routeName) {
-          case 'Home':
+          case 'Search':
             iconName = Platform.OS === 'ios'
-              ? `ios-information-circle${focused ? '' : '-outline'}`
-              : 'md-information-circle';
+              ? `ios-search${focused ? '' : '-outline'}`
+              : 'md-search';
             break;
-          case 'Links':
+          case 'Lists':
             iconName = Platform.OS === 'ios'
-              ? `ios-link${focused ? '' : '-outline'}`
-              : 'md-link';
+              ? `ios-pulse${focused ? '' : '-outline'}`
+              : 'md-book';
             break;
           case 'Settings':
             iconName = Platform.OS === 'ios'
