@@ -33,7 +33,6 @@ export default class Search extends React.Component {
                 screens/Search.js
               </MonoText>
             </View>
-
             <Text style={styles.getStartedText}>
               Change this text and your app will automatically reload.
             </Text>
@@ -43,12 +42,6 @@ export default class Search extends React.Component {
           <Text style={styles.tabBarInfoText}>
             This is a tab bar. You can edit it in:
           </Text>
-          <View
-            style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-            <MonoText style={styles.codeHighlightText}>
-              navigation/MainTabNavigator.js
-            </MonoText>
-          </View>
         </View>
       </View>
     );
@@ -68,7 +61,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   contentContainer: {
-    paddingTop: 30,
+    paddingTop: 90,
   },
   welcomeContainer: {
     alignItems: 'center',
@@ -105,7 +98,7 @@ const styles = StyleSheet.create({
   },
   tabBarInfoContainer: {
     position: 'absolute',
-    bottom: 0,
+    top: 20,
     left: 0,
     right: 0,
     ...Platform.select({
@@ -114,13 +107,14 @@ const styles = StyleSheet.create({
         shadowOffset: { height: -3 },
         shadowOpacity: 0.1,
         shadowRadius: 3,
+
       },
       android: {
         elevation: 20,
       },
     }),
     alignItems: 'center',
-    backgroundColor: '#fbfbfb',
+    backgroundColor: 'lavender',
     paddingVertical: 20,
   },
   tabBarInfoText: {
